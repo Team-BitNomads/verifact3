@@ -1,13 +1,30 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import Navbar from "./components/landing/lNavbar";
+import Hero from "./components/landing/lHero";
+import Reason from "./components/landing/lHow";
+import Feature from "./components/landing/lWhy";
+import Footer from "./components/landing/lFooter";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    {
+      title: "Verifact - AI Powered News Verification Platform",
+    },
+    {
+      name: "description",
+      content: "Welcome to Verifact!",
+    },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Feature />
+      <Reason />
+      <Footer />
+    </>
+  );
 }
