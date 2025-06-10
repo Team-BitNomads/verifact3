@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               Empowering you with verified information, instantly.
             </p>
             <div className="flex space-x-5">
-              {/* Social Links would go here */}
+              
             </div>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">

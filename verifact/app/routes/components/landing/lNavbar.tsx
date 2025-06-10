@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import verifactLogo from "../../../assets/verifact-logo.png";
+import {Link} from "react-router-dom"
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -72,12 +73,12 @@ const Navbar: React.FC = () => {
             >
               Contact
             </a>
-            <a
-              href="/chat"
+            <Link
+              to="/login"
               className="inline-flex items-center justify-center rounded-lg h-10 px-5 bg-blue-600 text-white font-semibold text-sm shadow-md hover:bg-blue-700"
             >
               Get Started
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}

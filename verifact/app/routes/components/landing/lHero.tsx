@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -22,18 +23,18 @@ const Hero: React.FC = () => {
           </p>
           <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
             <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5">
-              <a
-                href="/chat"
+              <Link
+                to="/login"
                 className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-semibold rounded-lg shadow-lg text-white bg-blue-600 hover:bg-blue-700 transition-transform duration-150 ease-in-out hover:scale-105 md:py-4 md:text-lg md:px-10"
               >
                 Verify a Claim Now
-              </a>
-              <a
-                href="#how-it-works"
+              </Link>
+              <Link
+                to="#how-it-works"
                 className="flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-semibold rounded-lg text-blue-600 bg-white hover:bg-blue-50 transition-transform duration-150 ease-in-out hover:scale-105 md:py-4 md:text-lg md:px-10"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
